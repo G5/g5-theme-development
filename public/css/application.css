@@ -381,3 +381,254 @@ fieldset {
   text-indent: 100%;
   white-space: nowrap;
   width: 100px; }
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.col {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.row-halves .col,
+.row-uneven-thirds-1 .col,
+.row-uneven-thirds-2 .col,
+.row-thirds .col,
+.row-fourths .col {
+  float: left; }
+
+.row-halves .col {
+  width: 50%; }
+
+.row-thirds .col {
+  width: 33.33333%; }
+
+.row-uneven-thirds-1 .col-1 {
+  width: 33.33333%; }
+
+.row-uneven-thirds-1 .col-2 {
+  width: 66.66667%; }
+
+.row-uneven-thirds-2 .col-1 {
+  width: 66.66667%; }
+
+.row-uneven-thirds-2 .col-2 {
+  width: 33.33333%; }
+
+.row-fourths .col {
+  width: 25%; }
+
+.contact-info .p-organization-name,
+.contact-info .h-adr,
+.contact-info .p-street-address,
+.contact-info .p-tel,
+.contact-info .p-url {
+  display: block; }
+
+.contact-info p {
+  margin-top: 0; }
+
+.html {
+  clear: both;
+  overflow: hidden; }
+
+.button {
+  display: block; }
+
+.button .btn-img,
+.button a {
+  display: block; }
+
+.button-list {
+  overflow: hidden; }
+
+.button-list .btn-img {
+  float: left;
+  margin-right: 1em; }
+
+.button-grid {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center; }
+
+@media (min-width: 500px) {
+  .button-grid {
+    float: left;
+    padding: 0 1em;
+    width: 50%; }
+
+  .button-grid:nth-of-type(2n+1) {
+    clear: left; } }
+.button-grid .btn-img {
+  margin: 0 auto 1em; }
+
+.social-feed {
+  background-color: white; }
+
+.social-feed .feed-switcher:before,
+.social-feed .feed-switcher:after {
+  content: "";
+  display: table; }
+
+.social-feed .feed-switcher:after {
+  clear: both; }
+
+.social-feed .feed-switcher {
+  border-bottom: 1px solid grey; }
+
+.social-feed .feed-switch {
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-color: white;
+  border-right: 1px solid grey;
+  position: relative; }
+
+.social-feed .feed-switch.active {
+  bottom: -1px; }
+
+#feed-switch-twitter {
+  background-image: url(http://widgets.g5dxm.com/twitter-feed/twitter-icon.png); }
+
+#feed-switch-blog {
+  background-image: url(http://widgets.g5dxm.com/blog-feed/rss-icon.png); }
+
+.social-feed .feed-section {
+  padding: 15px; }
+
+.social-feed .feed-section li {
+  background-color: #ececec;
+  margin-bottom: 10px;
+  padding: 10px;
+  overflow: hidden; }
+
+.social-feed p {
+  margin: 0; }
+
+.social-feed .tweet-avatar {
+  float: left;
+  margin-right: 2%;
+  width: 10%; }
+
+.social-feed .tweet-avatar img {
+  width: 100%; }
+
+.social-feed .tweet-text {
+  float: left;
+  width: 88%; }
+
+.footer-info {
+  float: right;
+  text-align: right; }
+
+.footer-info .copyright {
+  margin-top: 0; }
+
+.footer-info .access {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top; }
+
+.footer-info .access {
+  background: url(http://themes.g5dxm.com/shared/access-icons.png) 0 0 no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.footer-info .housing-icon {
+  height: 23px;
+  width: 31px; }
+
+.footer-info .handicap-icon {
+  background-position: -43px 0;
+  height: 23px;
+  width: 20px; }
+
+.footer-info .corporate-logo {
+  display: inline-block;
+  max-width: 200px; }
+
+.social-links a {
+  display: inline-block;
+  margin-right: 5px; }
+
+.coupon {
+  text-align: center; }
+
+.map .canvas {
+  height: 0;
+  padding-bottom: 75%;
+  padding-top: 30px;
+  width: 100%;
+  position: relative; }
+
+/*google map bootstrap fix*/
+.map .canvas img {
+  max-width: none; }
+
+.map .canvas label {
+  width: auto;
+  display: inline; }
+
+.directions .canvas {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 1em; }
+
+/*google map bootstrap fix*/
+.directions .canvas img,
+.directions .panel img {
+  max-width: none; }
+
+.directions .canvas label {
+  width: auto;
+  display: inline; }
+
+.directions .text label {
+  display: block; }
+
+.directions .panel {
+  margin-top: 1em; }
+
+@media (min-width: 980px) {
+  .directions .canvas {
+    width: 50%;
+    margin-right: 2.5%;
+    float: left; }
+
+  .directions .text {
+    width: 47.5%;
+    float: left; }
+
+  .directions .text input[type=submit] {
+    margin-left: 5px; } }
+.human-directions .canvas {
+  width: 500px;
+  height: 500px; }
+
+/*google map bootstrap fix*/
+.human-directions .canvas img {
+  max-width: none; }
+
+.human-directions .canvas label {
+  width: auto;
+  display: inline; }
+
+blockquote p:before {
+  content: '\201C'; }
+
+blockquote p:after {
+  content: '\201D'; }
