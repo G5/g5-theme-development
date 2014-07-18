@@ -1,0 +1,204 @@
+// *************************************
+//
+//   Settings
+//
+// *************************************
+
+// ----- Base Colors ----- //
+$white: #fff;
+$black: #1b1d1d;
+$grey: #404040;
+$light-grey: #ececec;
+$dark-grey: #2b2c2c;
+
+// ----- Text Colors ----- //
+$base-color: #707070;
+$dark-color: #000;
+$inverse-color: #fff;
+$base-link-color: $dark-color;
+$base-hover-color: $secondaryColor;
+
+$inverted-color: #fff;
+$primary-light: lighten(desaturate($primaryColor, 10%), 20);
+
+// ----- Background Colors ----- //
+$base-background: #fff;
+$alt-background: $black;
+// ----- Borders ----- //
+$base-border: 1px solid $black;
+
+// ----- Typography ----- //
+$base-fontFamily: 'futura-pt', $helvetica;
+$base-fontWeight: 400;
+$base-fontSize: 18px;
+$base-lineHeight: 1.3;
+$alt-fontFamily: "proxima-nova-alt-ext-cond", $helvetica;
+$alt-fontWeight: 300;
+
+$light-fontWeight: 300;
+$bold-fontWeight: 700;
+
+
+// ----- Whitespace ----- //
+$base-whitespace: 30px;
+$half-whitespace: $base-whitespace / 2;
+$double-whitespace: $base-whitespace * 2;
+
+// ----- Contexts ----- //
+$site-width: 1170px;
+
+// ----- Layout ----- //
+$maxWidth: $site-width;
+$max-xsmall: em(479);
+$min-xsmall: em(480);
+$max-small: em(624);
+$min-small: em(625);
+$max-medium: em(909);
+$min-medium: em(910);
+$max-large: em(1168);
+$min-large: em(1170);
+$max-xlarge: em(1599);
+$min-xlarge: em(1600);
+
+
+// *************************************
+//
+//   Helpers
+//
+// *************************************
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+@mixin at-least($query) {
+  @media screen and (min-width: $query) {
+    @content;
+  }
+}
+
+@mixin until($query) {
+  @media screen and (max-width: $query) {
+    @content;
+  }
+}
+
+@mixin between($min-query, $max-query) {
+  @media screen and (min-width: $min-query) and (max-width: $max-query) {
+    @content;
+  }
+}
+
+@mixin grid-row {
+  @include clearfix;
+  clear: both;
+  margin-left: -$half-whitespace;
+  margin-right: -$half-whitespace;
+}
+
+@mixin grid-defaults {
+  float: left;
+  padding-left: $half-whitespace;
+  padding-right: $half-whitespace;
+}
+
+@mixin grid-column($n: 1) {
+  width: #{$n/12*100}#{"%"};
+}
+
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+@function percent($target, $context: $maxWidth) {
+  @return #{$target / $context * 100}#{"%"};
+}
+
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+%row {
+  @include grid-row;
+}
+
+%clearfix {
+  @include clearfix;
+}
+
+%hidden {
+  display: none !important;
+}
+
+%visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+%ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+%overflow {
+  overflow: hidden;
+}
+
+%relative {
+  position: relative;
+}
+
+%absolute {
+  position: absolute;
+}
+
+%hide-mobile {
+  @include at-least($min-medium) {
+    display: none !important;
+  }
+}
+
+%show-desktop {
+  @include until($max-medium) {
+    display: none !important;
+  }
+}
+
+%shout {
+  text-transform: uppercase;
+}
+
+%inline {
+  display: inline-block;
+}
+
+%inverse {
+  color: $inverse-color;
+}
+
+%center {
+  text-align: center;
+}
+
+%lead {
+  font-size: 131.25%;
+}
+
+%pullLeft {
+  float: left;
+}
+
+%pullRight {
+  float: right;
+}
+
+
+// -------------------------------------
+//   Variables
+// -------------------------------------

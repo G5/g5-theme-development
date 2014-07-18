@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head id="drop-target-head">
+
+    <title>Luxe</title>
+
+    <meta charset="utf8" />
+
+    <!-- for devices that don't support viewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/application.css">
+
+    <script src="http://themes.g5dxm.com/shared/javascripts/modernizr.custom.js"></script>
+
+    <script type="text/javascript" src="//use.typekit.net/rly4uwe.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  </head>
+
+  <body class="web-home-template">
+    <div class="rows-layout layout">
+
+      <header role="banner">
+
+        <div class="navigation-container collapsable">
+          <div class="content">
+
+            <div class="buttons">
+              <span id="drop-target-btn"><!-- btn widget here --></span>
+              <a class="collapsable-btn btn" data-toggle="collapse" data-target=".collapsable-content"><span class="text">Menu</span><span class="bars"><span></span><span></span><span></span></span></a>
+            </div>
+
+            <div id="drop-target-nav" class="collapsable-content" style="height:0">
+              <nav class="navigation widget">
+                <ul>
+                  <li><a class="active" href="/">Version A</a></li>
+                  <li><a href="/version-b.html">Version B</a></li>
+                  <li><a href="/version-c.html">Version C</a></li>
+                  <li><a href="/interior.html">Interior</a></li>
+                  <li><a href="/gallery.html">Gallery</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div> <!-- end .content -->
+        </div> <!-- end .navigation-container -->
+
+        <div class="logo-container">
+          <div id="drop-target-logo" class="content">
+            <h1 class="h-card" itemscope itemtype="http://schema.org/LocalBusiness">
+              <a class="logo widget u-url" href="/" itemprop="url">
+                <img class="u-logo p-name" src="images/logo.png" alt="" itemprop="logo" />
+              </a>
+            </h1>
+          </div>
+        </div>
+
+      </header>
+
+      <div id="drop-target-aside-before-main">
+        <div class="contact-info-sheet widget g5-enhanced-form">
+          <script class="config" type="application/json">
+            {
+              "clientUrn": "g5-c-6d4gqkl-demo",
+              "locationUrn": "g5-cl-6d4gqkl-bend"
+            }
+          </script>
+
+          <div class="info-sheet-nav">
+            <!-- use phone service for this number -->
+            <a class="info-sheet-phone-btn info-sheet-toggle" href="tel://8881234567">888-123-4567</a>
+            <a class="info-sheet-email-btn info-sheet-toggle" href="#">Email</a>
+            <div class="info-sheet-page-up info-sheet-pagination">UP</div>
+            <div class="info-sheet-page-down info-sheet-pagination">DOWN</div>
+          </div>
+
+          <div class="info-sheet-content">
+            <div class="info-sheet-phone">888-123-4567</div>
+            <div class="info-sheet-email">
+
+              <div class="contact-form">
+
+                <h3 class="form-heading">Request Information</h3>
+
+                <form id="form-template" class="form h-entry" action="" method="POST">
+                  <p class="form-note">Please fill out this form and we will get in touch as soon as we can</p>
+
+                  <div class="p-author h-card">
+                    <div class="form-field">
+                      <label for="p-name" class="required">Full Name</label>
+                      <input type="text" id="p-name" class="p-name" name="p-name" placeholder="Full Name *" required />
+                    </div>
+
+                    <div class="form-field">
+                      <label for="u-email" class="required">Email</label>
+                      <input type="email" id="u-email" class="u-email" name="u-email" placeholder="Email *" required />
+                    </div>
+
+                    <div class="form-field">
+                      <label for="p-tel">Phone Number</label>
+                      <input type="tel" id="p-tel" class="p-tel" name="p-tel" placeholder="Phone" />
+                    </div>
+
+                  </div>
+
+                  <div class="form-field">
+                    <label for="e-content">Message</label>
+                    <textarea id="e-content" class="e-content" name="e-content" placeholder="Message"></textarea>
+                  </div>
+
+                  <input type="submit" value="Submit" />
+                  <span class="form-instruction">* Required Field</span>
+                </form>
+
+              </div> <!-- end contact form -->
+
+            </div> <!-- end .sticky-email -->
+          </div> <!-- end .sticky-content -->
+        </div> <!-- end .sticky-contact -->
+      </div>
+
+      <section role="main" id="drop-target-main">
+        <div class="row">
+          <div class="content row-single">
+            <div class="col col-1" id="drop-target-first-col">
+              <div class="column">
+                <div class="column-content column-three">
+
+                  <div class="row-1" id="drop-target-first-row">
+                    <nav class="action-calls widget">
+                      <ul>
+                        <li><a href="/apartments/or/bend/schedule-tour">Schedule Tour</a></li>
+                        <li><a href="/apartments/or/bend/request-information">Request Information</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <div class="row-2" id="drop-target-second-row">
+                    <figure class="photo photo-block widget h-media" itemscope itemtype="http://schema.org/Photograph">
+                      <img class="u-photo" src="http://g5-widget-garden.herokuapp.com/static/tmp-images/stock-photo.jpg" alt="BG" itemprop="image">
+                    </figure>
+                  </div>
+
+                  <div class="row-3" id="drop-target-third-row">
+                    <div class="html widget">
+                      <div class="html-content">
+                        <h2>Welcome to Compass Rock</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean odio nibh, euismod a, lobortis in, laoreet eu, eros. Praesent lorem risus, commodo sit amet, viverra in, sagittis nec, justo.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="content row-single">
+
+            <div class="col col-1" id="drop-target-first-col">
+
+              <div class="gallery widget">
+
+                <script class="config" type="application/json">
+                  {
+                    "animation": "fade",
+                    "show_thumbnails": "yes",
+                    "mini_gallery": "yes"
+                  }
+                </script>
+
+                <div class="flexslider-container">
+                  <div class = "flexslider mini-gallery">
+                    <ul class="slides">
+                      <li data-thumb="images/photo-1.jpg">
+                        <img src="images/photo-1.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                      <li data-thumb="images/photo-2.jpg">
+                        <img src="images/photo-2.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                      <li data-thumb="images/photo-3.jpg">
+                        <img src="images/photo-3.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                      <li data-thumb="images/photo-2.jpg">
+                        <img src="images/photo-2.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                      <li data-thumb="images/photo-1.jpg">
+                        <img src="images/photo-1.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                      <li data-thumb="images/photo-2.jpg">
+                        <img src="images/photo-2.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                      <li data-thumb="images/photo-3.jpg">
+                        <img src="images/photo-3.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                      <li data-thumb="images/photo-2.jpg">
+                        <img src="images/photo-2.jpg" alt="" />
+                        <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </li>
+                    </ul>
+                  </div> <!-- end .flexslider -->
+                </div> <!-- end .flexslider-container -->
+              </div> <!-- end .gallery -->
+
+            </div> <!-- end .col-1 -->
+
+          </div> <!-- end .content -->
+        </div> <!-- end .row -->
+
+        <div class="row">
+          <div class="content row-uneven-thirds-2">
+
+            <div class="col col-1" id="drop-target-first-col">
+
+              <div class="html widget">
+                <div class="html-content">
+                  <h2>Welcome to Compass Rock</h2>
+                  <h3>You’re Already Home</h3>
+                  <p>Lorem ipsum dolar sit amet, consectetuer adipiscing elit. Aenean commondo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturie montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Cum sociis natoque penatibus et magnis dis parturie.</p>
+                </div>
+              </div> <!-- end .html -->
+
+            </div> <!-- end .col-1 -->
+
+            <div class="col col-2" id="drop-target-second-col">
+
+              <div class="contact-info h-card vcard widget" itemscope itemtype="http://schema.org/LocalBusiness">
+                <script class="config" type="application/json">
+                  {
+                    "clientUrn": "g5-c-6d4gqkl-demo",
+                    "locationUrn": "g5-cl-6d4gqkl-bend"
+                  }
+                </script>
+                <h4 class="p-name">Compass Rock</h4>
+                <p class="phone">
+                  <a class="number" href="/">
+                    <span class="p-tel tel" itemprop="telephone">323.825.2132</span>
+                  </a>
+                </p>
+                <p class="h-adr p-adr adr" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span class="p-street-address street-address" itemprop="streetAddress">
+                    444 N Gordon Avenue
+                  </span>
+
+                  <span class="p-locality locality" itemprop="addressLocality">
+                    Los Angeles
+                  </span>,
+
+                  <span class="p-region region" itemprop="addressRegion">
+                    CA
+                  </span>
+
+                  <span class="p-postal-code postal-code" itemprop="postalCode">
+                    91773
+                  </span>
+                </p>
+                <p class="u-email email" itemprop="email">
+                  <a href="/">Email Us</a>
+                </p>
+              </div> <!-- end .contact-info -->
+
+            </div> <!-- end .col-2 -->
+          </div> <!-- end .content -->
+        </div> <!-- end .row -->
+
+
+
+        <div class="row" >
+          <div class="content row-halves">
+
+            <div class="col col-1" id="drop-target-first-col">
+
+              <div class="coupon widget">
+                <div class="coupon-info h-card">
+                  <h3 class="coupon-title">Special Offer</h3>
+                  <p class="coupon-offer"><strong>$100 off first month's rent</strong></p>
+                  <div class="coupon-actions">
+                    <a href="#" class="coupon-view btn">View Coupon</a>
+                  </div>
+                </div>
+              </div> <!-- end .coupon -->
+
+            </div> <!-- end .col-1 -->
+
+            <div class="col col-2" id="drop-target-second-col">
+
+              <figure class="photo photo-block widget h-media" itemscope itemtype="http://schema.org/Photograph">
+                <img class="u-photo" src="images/photo-2.jpg" alt="" itemprop="image" />
+              </figure>
+
+            </div> <!-- end .col-2 -->
+
+          </div> <!-- end .content -->
+        </div> <!-- end .row -->
+
+
+
+        <div class="row" >
+          <div class="content row-halves">
+
+            <div class="col col-1" id="drop-target-first-col">
+
+              <figure class="photo photo-block widget h-media" itemscope itemtype="http://schema.org/Photograph">
+                <img class="u-photo" src="images/photo-3.jpg" alt="" itemprop="image" />
+              </figure>
+
+            </div> <!-- end .col-1 -->
+
+            <div class="col col-2" id="drop-target-second-col">
+
+              <div class="quote widget">
+                <blockquote>
+                  <p>Lorem ipsum dolar sit amet, consectetuer adipiscing elit. Aenean commondo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturie montes.</p>
+                  <cite>Jane Doe, Compass Rock resident</cite>
+                </blockquote>
+              </div>
+
+            </div> <!-- end .col-2 -->
+
+          </div> <!-- end .content -->
+        </div> <!-- end .row -->
+
+
+
+        <div class="row" >
+          <div class="content row-halves">
+
+            <div class="col col-1" id="drop-target-first-col">
+
+              <div class="html widget">
+                <div class="html-content">
+                  <h2>Explore the Neighborhood</h2>
+                  <ul>
+                    <li>Lorem ipsum dolar sit amet.</li>
+                    <li>Consectetuer adipiscing elit. Aenean commondo
+        ligula eget dolor.</li>
+                    <li>Aenean massa. Cum sociis natoque penatibus et
+        magnis dis parturie montes, mascetur.</li>
+                    <li>Voluptatem quia voluptas sit aspernatur.</li>
+                    <li>Sed ut perspiciatis unde omnis iste natus.</li>
+                  </ul>
+                </div>
+              </div> <!-- end .html -->
+
+            </div> <!-- end .col-1 -->
+
+            <div class="col col-2" id="drop-target-second-col">
+
+              <div class="map widget">
+                <script class="config" type="application/json">
+                  {
+                    "address": "444 N Gordon St, Los Angeles, CA 91773",
+                    "panZoom": false,
+                    "mapType": "ROADMAP"
+                  }
+                </script>
+
+                <div class="canvas"></div>
+              </div>
+
+
+            </div> <!-- end .col-2 -->
+
+          </div> <!-- end .content -->
+        </div> <!-- end .row -->
+
+
+        <div class="row" >
+          <div class="content row-halves">
+
+            <div class="col col-1" id="drop-target-first-col">
+
+              <figure class="video photo-block widget h-media" itemscope itemtype="http://schema.org/Photograph">
+                <img class="u-photo" src="http://cdn11.g5search.com/assets/269438/salida-del-sol-aparments-ventura-ca.jpg?1402537096" alt="" itemprop="image" />
+              </figure>
+
+            </div> <!-- end .col-1 -->
+
+            <div class="col col-2" id="drop-target-second-col">
+
+              <div class="social-feed widget">
+                <script id="social-feed-config" type="application/json">
+                  {
+                    "twitter_username": "crissmancd",
+                    "tweet_count": 3,
+                    "display_avatar": false,
+                    "feed_url": "http://daringfireball.net/feeds/main",
+                    "show_entry_summary": true,
+                    "entries_to_show": 3
+                  }
+                </script>
+
+                <div class="feed-switcher">
+                  <a class="feed-switch active" id="feed-switch-twitter" href="#twitter-feed" title="Show Tweets">Show Twitter Feed</a>
+                  <a class="feed-switch" id="feed-switch-blog" href="#blog-feed" title="Show Blog Feed">Show Blog Feed</a>
+                </div>
+
+                <div id="twitter-feed" class="twitter-feed feed-section">
+                  <ul class="tweet-list">
+                  </ul>
+                  <a class="btn" href="http://www.twitter.com/crissmancd" href="#" target="_blank">Read All</a>
+                </div>
+
+                <div id="blog-feed"  class="blog-feed feed-section">
+                  <ul class="h-feed feed"></ul>
+                </div>
+              </div>
+
+
+            </div> <!-- end .col-2 -->
+
+          </div> <!-- end .content -->
+        </div> <!-- end .row -->
+
+
+
+      </section>
+
+      <aside id="drop-target-aside-after-main">
+      </aside>
+
+      <footer role="contentinfo">
+        <div id="drop-target-footer" class="content">
+
+          <div class="contact-info h-card vcard widget" itemscope itemtype="http://schema.org/LocalBusiness">
+            <h4 class="p-name">Compass Rock</h4>
+            <p class="phone">
+              <a class="number" href="/">
+                <span class="p-tel tel" itemprop="telephone">323.825.2132</span>
+              </a>
+            </p>
+            <p class="h-adr p-adr adr" itemscope itemtype="http://schema.org/PostalAddress">
+              <span class="p-street-address street-address" itemprop="streetAddress">
+                444 N Gordon Avenue
+              </span>
+
+              <span class="p-locality locality" itemprop="addressLocality">
+                Los Angeles
+              </span>,
+
+              <span class="p-region region" itemprop="addressRegion">
+                CA
+              </span>
+
+              <span class="p-postal-code postal-code" itemprop="postalCode">
+                91773
+              </span>
+            </p>
+            <p class="u-email email" itemprop="email">
+              <a href="/">Email Us</a>
+            </p>
+          </div> <!-- end .contact-info -->
+
+          <div class="footer-info widget">
+            <div class="social-links widget">
+              <a href="" class="facebook" title="Facebook" rel="me">Facebook</a>
+              <a href="" class="twitter" title="Twitter" rel="me">Twitter</a>
+              <a href="" class="yelp" title="Yelp" rel="me">Yelp</a>
+              <a href="" class="google-plus" title="Google" rel="me">Google</a>
+            </div>
+
+            <div class="nav">
+              <a href="/">Privacy Policy</a>
+              <a href="/">Terms of Use</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="https://s3.amazonaws.com/themes.g5dxm.com/shared/javascripts/jquery-1.8.1.min.js"></script>
+    <script src="https://s3.amazonaws.com/themes.g5dxm.com/shared/javascripts/bootstrap-collapse.js"></script>
+    <script src="https://s3.amazonaws.com/themes.g5dxm.com/shared/javascripts/helper.js"></script>
+    <script src="https://s3.amazonaws.com/themes.g5dxm.com/shared/javascripts/script.js"></script>
+    <script src="https://s3.amazonaws.com/themes.g5dxm.com/shared/javascripts/json2.js"></script>
+
+    <script src="https://g5-widget-garden.herokuapp.com/static/components/gallery/javascripts/show.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/static/components/social-feed/javascripts/show.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/static/components/map/javascripts/show.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/javascripts/libs/jquery.flexslider-min.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/javascripts/libs/smart-resize.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/javascripts/libs/cross-domain-ajax.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/javascripts/libs/map-and-directions.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/javascripts/libs/jquery.xdomainrequest.min.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/javascripts/libs/phone-service.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/javascripts/libs/form-urls.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/static/components/navigation/javascripts/show.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/static/components/contact-info/javascripts/show.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/static/components/contact-info-sheet/javascripts/show.js"></script>
+    <script src="https://g5-widget-garden.herokuapp.com/static/components/footer-info/javascripts/show.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <script src="http://themes.g5dxm.com/shared/javascripts/selectivizr-min.js"></script>
+      <script src="http://themes.g5dxm.com/shared/javascripts/respond.min.js"></script>
+    <![endif]-->
+
+  </body>
+</html>
