@@ -15,13 +15,7 @@ Simple Sinatra app for developing new themes
 bundle
 ```
 
-- If using Bourbon scss library, install inside scss folder
-```bash
-cd scss
-bourbon install
-```
-
-- Import bourbon files into theme.scss
+- Import bourbon files into theme.scss (http://bourbon.io)
 ```bash
 @import 'bourbon/bourbon';
 ```
