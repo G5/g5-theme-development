@@ -7,7 +7,7 @@ https://g5.jiveon.com/docs/DOC-6351
 
 ## Requirements
 
-- Ruby version 2.1.1
+- Ruby version 1.9.3
 
 
 ## Setup
