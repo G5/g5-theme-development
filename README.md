@@ -30,6 +30,11 @@ bundle
 thin start
 ```
 
+- Start server on specific port
+```bash
+thin start -p 4000
+```
+
 - Start SASS server for compiling SCSS
 ```bash
 sass --watch public/scss:public/css
