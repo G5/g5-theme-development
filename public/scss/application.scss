@@ -2,7 +2,15 @@
 @import "default/client_hub";
 
 // Widget CSS
-@import "widgets";
+// Import whatever widgets you use from https://g5-widget-garden.herokuapp.com
+@import "https://g5-widget-garden.herokuapp.com/static/components/button/stylesheets/button.css";
+@import "https://g5-widget-garden.herokuapp.com/static/components/contact-info/stylesheets/contact-info.css";
+@import "https://g5-widget-garden.herokuapp.com/static/components/footer-info/stylesheets/footer-info.css";
+@import "https://g5-widget-garden.herokuapp.com/static/components/gallery/stylesheets/gallery.css";
+@import "https://g5-widget-garden.herokuapp.com/static/components/html/stylesheets/html.css";
+@import "https://g5-widget-garden.herokuapp.com/static/components/navigation/stylesheets/navigation.css";
+@import "https://g5-widget-garden.herokuapp.com/static/components/photo/stylesheets/photo.css";
+
 
 // Theme CSS
 @import "theme";
